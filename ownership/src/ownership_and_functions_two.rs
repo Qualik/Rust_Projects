@@ -1,8 +1,8 @@
 fn main(){
     let s = String::from("hello"); // s comes into scope
 
-    let s_taken_back = takes_ownership(s); // s_taken_back value moves its return value
-    // into takes_ownership
+    let s_taken_back = takes_ownership(s); // takes_ownership value moves its return value
+    // into s_taken_back
 
     let x = 5; // x comes into scope
 
