@@ -6,7 +6,10 @@
 1. The Rust Programming language book
 2. https://github.com/Qualik/rustlings
 3. https://github.com/tommcgurl/learn-rust-live
-4. Regular catch-ups / discussions with colleagues
+4. https://depth-first.com/articles/2020/01/27/rust-ownership-by-example/ 
+5. https://arewegameyet.rs/resources/tutorials/ 
+6. Regular catch-ups / discussions with colleagues
+
 
 
 ## Commands
