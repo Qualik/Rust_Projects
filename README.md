@@ -1,5 +1,5 @@
 # Learning Rust 
-- My journey in learning Rust which I use in my regular job as a QA Engineer
+- My journey in learning Rust which helps with the services I use in my regular job as they are built in Rust. Its a steep learning curve but enjoying the challenge.
 
 ## Resources
 
