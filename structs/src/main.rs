@@ -5,7 +5,6 @@ fn main() {
         sign_in_count: u64,
         active: bool,
     }
-
     let mut user1 = User {
         email: String::from("bigbangtheory11@example.com"),
         username: String::from("bigbang"),
@@ -34,4 +33,30 @@ fn main() {
     );
 
     println!("User2 email: {}, username: {}", user2.email, user2.username);
+
+
+    // Creating Instances from Other Instances with Struct Update Syntax
+    let inactive_user1 = User {
+        active: false,
+        ..user1
+    };
+
+    println!("Inactive User1 Info - active: {}, username: {}", inactive_user1.active, inactive_user1.username);
+
+}
+
+// Tuple Structs without names fields to create different types
+
+fn tuple_structs() {
+    struct Color(i32, i32, i32); // Note these are different types even though
+    struct Point(i32, i32, i32); // the fields within the struct have the same types
+                                 // They are different because you have to define each structs own type
+
+    let black = Color(0, 0, 0);
+    let origin = Point(0, 0, 0);
+
+    let (a, b, c) = origin; // Gives the individual values
+    let (r, g, b) = black; // dot notation would be: (.0.1.2)
+
+    // Note () unit-type
 }
