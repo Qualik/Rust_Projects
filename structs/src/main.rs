@@ -48,15 +48,21 @@ fn main() {
 // Tuple Structs without names fields to create different types
 
 fn tuple_structs() {
-    struct Color(i32, i32, i32); // Note these are different types even though
-    struct Point(i32, i32, i32); // the fields within the struct have the same types
-                                 // They are different because you have to define each structs own type
+    struct Color(i32, i32, i32); 
+    struct Point(i32, i32, i32); 
+    
+    // Note these are different types even though
+    // the fields within the struct have the same types
+    // They are different because you have to define each structs own type
 
     let black = Color(0, 0, 0);
     let origin = Point(0, 0, 0);
 
-    let (a, b, c) = origin; // Gives the individual values
-    let (r, g, b) = black; // dot notation would be: (.0.1.2)
+    let (a, b, c) = origin; 
+    let (r, g, b) = black;
+    
+    // Gives the individual values
+    // dot notation would be: (.0.1.2)
 
     // Note () unit-type
 }
